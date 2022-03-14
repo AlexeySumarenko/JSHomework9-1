@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Страница к которой подключён JQuery</title>
+    <script src="jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#but1').click(function() {
+                $('[align="center"]').hide();
+            });
+            $('#but2').click(function() {
+                $('[align="center"]').show();
+            });
+        });
+    </script>
+</head>
+<body>
+    <button id="but1">Спрятать элементы с атрибутом align=center!</button> 
+    <button id="but2">Показать элементы с атрибутом align=center!</button>  
+    <h2 align=center>Это заголовок 2 уровня c align=center!</h2>
+    <p>А это абзац.</p>
+    <p align=center>А вот это ещё один абзац c align=center!</p>  
+</body>
+</html>
